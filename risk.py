@@ -2,9 +2,9 @@ from Territory import Territory
 from Player import Player
 from random import shuffle
 
-rmap = [Territory("Iceland", ["Great Britan"], [[4,4],[3,4],[4,3]]),
-       Territory("Great Britan", ["France", "Iceland"], [[5,5],[5,6],[6,6]]),
-       Territory("France", ["Great Britan"], [[6,5],[7,5],[8,5]])]
+rmap = [Territory("Iceland", ["Great Britan"]),
+       Territory("Great Britan", ["France", "Iceland"]),
+       Territory("France", ["Great Britan"]]
 
 def print_game_status():
     print(rmap[0].name + ':  ', rmap[0].troops,'troops, owner is', rmap[0].owner.name)
