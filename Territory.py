@@ -1,10 +1,9 @@
 class Territory():
-    def __init__(self, name, neighbours, pxlarray):
+    def __init__(self, name, neighbours):
         self.name = name
         self.owner = False
         self.troops = 0
         self.neighbours = neighbours
-        self.pxlarray = pxlarray
 
     def is_neighbours_with(self, other_region):
         for neighbour in self.neighbours:
